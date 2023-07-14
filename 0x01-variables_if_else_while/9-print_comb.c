@@ -5,21 +5,13 @@
 */
 int main(void)
 {
-	int number = 0;
+	int number;
 
-	while (number < 10)
+	for (number = 48; number <= 57; number++)
 	{
-		int number2 = 0;
-
-		while (number2 < 10)
-		{
-			putchar('0' + number);
-			putchar('0' + number2);
-			putchar(',');
-			number2++;
-		}
-
-		number++;
+		putchar(number);
+		putchar(',');
+		putchar(' ');
 	}
 
 	putchar('\n');
